@@ -101,4 +101,3 @@ curl -X POST -H "Content-Type: application/json" -d '{"valor": 380}' http://loca
 
 Este projeto foi desenvolvido para simular um caixa eletrônico simples. A lógica foi otimizada para garantir a menor quantidade de cédulas possíveis para qualquer valor de saque permitido. Quaisquer dúvidas ou problemas, por favor, abra uma issue no repositório.
 
-# desafio-atm
