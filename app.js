@@ -16,10 +16,10 @@ const calcularCedulas = (valor) => {
 
 app.post("/api/saque", (req, res) => {
     const { valor } = req.body;
-    if (typeof valor !== "number" || valor <= 0) {
+    if (typeof valor !== "number" || !Number.isInteger(valor) || valor <= 0) {
         return res
             .status(400)
-            .json({ erro: "O valor deve ser um inteiro positivo" });
+            .json({ erro: "O valor deve ser um número inteiro positivo" });
     }
     const resultado = calcularCedulas(valor);
     res.json(resultado);
